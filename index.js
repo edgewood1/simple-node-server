@@ -20,7 +20,7 @@ async function hello(x){
   }).catch((err) => {
     console.log('fetch error', err)
   })
-  //or 
+  //or
   
   // let response = await fetch(targetUrl); // first then on fetch
   // let data = await response.json();  // second then on resp.json.
