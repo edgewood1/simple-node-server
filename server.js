@@ -5,7 +5,7 @@ var fs = require('fs')
 var http = require("http");
 const StringDecoder = require('string_decoder').StringDecoder;
 var httpServer = http.createServer(handleRequest);
-var { compose, createStore, combineReducers, applyMiddleWare } = require("Redux");
+var { compose, createStore, combineReducers, applyMiddleWare } = require("redux");
  
 // reducer function
 function counter(state, action) {
