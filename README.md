@@ -4,10 +4,10 @@ server.js
 
 
 to do
-X add redux
-X get this on github
-X get this on a server
-X get a domain name
+- X add redux
+- X get this on github
+- X get this on a server
+- X get a domain name
 - move redux to own folder
 - setup webpack
 - add a database
