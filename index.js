@@ -30,10 +30,13 @@ const addToOutput = (title) => {
   console.log(title)
   const titleSpot = document.getElementById('title');
   const increment = document.getElementById('increment');
-  const text1 = document.createTextNode(title.inc)
-  const text2 = document.createTextNode(title.resp.title)
-  // x.innerHTML = title.title;
+  titleSpot.textContent = ''
+  increment.textContent = ''
+  const input = document.querySelector('input[type=text]');
+  console.log(input)
+  input.value = '';
+  const text1 = document.createTextNode(`Increment: ${title.inc}`)
+  const text2 = document.createTextNode(`Title: ${title.resp.title}`)
   increment.appendChild(text1);
   titleSpot.appendChild(text2);
-
 }
