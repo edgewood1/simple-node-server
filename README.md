@@ -1,27 +1,26 @@
 
 server.js
-
 -node server
 
 
 to do
-- get this on github
-- get this on a server
-- get a domain name
+X add redux
+X get this on github
+X get this on a server
+X get a domain name
+- move redux to own folder
+- setup webpack
+- add a database
 - create a mobile / desktop view
   - react
   - litelement
-- move store into its own place
-- hook up database (on a different server)
-- bundler - 
-
-
-standard: mobile view 
+ 
+mobile view 
 
 -input
 -list 
 
-standarddesktop: 
+desktop: 
 
 gmail
 - two tool bars
