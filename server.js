@@ -46,10 +46,19 @@ async function handleRequest(req, res) {
   if (req.url === '/') {
     const x = await pageLoad('./static/index.html', res);
     res.end(x)
+    // add js
   } else if (req.url === '/index.js') {
     const x = await pageLoad('./index.js', res);
     res.end(x)
-  } else if (req.url === '/send') {
+  } else if (req.url === '/react.js') {
+    // add react
+    const x = await pageLoad('./react/index.js', res);
+    res.end(x)
+  } else if (req.url === '/layout') {
+    res.end(await pageLoad('./static/one.html'))
+  } else if (req.url === '/input-comp.js') {
+    res.end(await pageLoad('./input-comp.js'))
+  }else if (req.url === '/send') {
     const x = await handleApi(req)
     // server response has go to be a string
     res.end(JSON.stringify(x))
