@@ -1,9 +1,12 @@
 
 let value;
-
+ 
+const comp = document.querySelector('my-button').shadowRoot;
 
 async function hello(x){
-  const value = document.querySelector('[type="text"]').value;
+  console.log("hello!!")
+  const value = comp.querySelector('[type="text"]').value;
+  // const value = document.querySelector('[type="text"]').value;
   fetch('/send', {
     method:'POST',
     headers: {
@@ -28,12 +31,12 @@ async function hello(x){
  
 const addToOutput = (title) => {
   console.log(title)
-  const titleSpot = document.getElementById('title');
-  const increment = document.getElementById('increment');
+  const titleSpot = comp.querySelector('#title');
+  const increment = comp.querySelector('#increment');
   titleSpot.textContent = ''
   increment.textContent = ''
-  const input = document.querySelector('input[type=text]');
-  console.log(input)
+  const input = comp.querySelector('input[type=text]');
+  console.log('this', input)
   input.value = '';
   const text1 = document.createTextNode(`Increment: ${title.inc}`)
   const text2 = document.createTextNode(`Title: ${title.resp.title}`)

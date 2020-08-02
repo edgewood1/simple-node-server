@@ -1,6 +1,7 @@
 
 const store = require('./store.js');
 
+// action
 const editConfig = (newName) => {
   store.dispatch({
     type: "EDIT_CONFIG", 
@@ -8,7 +9,7 @@ const editConfig = (newName) => {
   })
 }
 
-
+// api calls happen during actions
 const api = async () => {
   const res = await  fetch('https://jsonplaceholder.typicode.com/users')
       .then(response => response.json())
